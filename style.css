@@ -1,0 +1,122 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(248, 248, 248, 1);
+  position: relative;
+  /* overflow: hidden; */
+  opacity: 1;
+}
+
+.vector {
+  width: 544.18px;
+  height: 745.69px;
+  position: absolute;
+  bottom: 350px;
+  top: 30px;
+  margin-left: 170px;
+  opacity: 1;
+}
+
+.calculator {
+  width: 400px;
+  height: 736px;
+  margin-top: 144px;
+  margin-left: 513px;
+  gap: 0px;
+  opacity: 1;
+  position: absolute;
+  background-color: rgba(50, 50, 50, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+  width: 350px;
+  height: 290px;
+  text-align: right;
+  font-size: 48px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(50, 50, 50, 1);
+  color: white;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#result {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56.25px;
+  text-align: right;
+  color: white;
+  position: absolute;
+  top: 220px;
+  right: 20px;
+}
+
+#equalSign {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56.25px;
+  text-align: left;
+  color: white;
+  position: absolute;
+  top: 220px;
+  left: 20px;
+}
+
+.line {
+  width: 310px;
+  height: 2px;
+  background-color: rgba(116, 235, 213, 1);
+  border: 1px solid;
+  position: absolute;
+  top: 291px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-180deg);
+  opacity: 1;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0px;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 15px;
+  place-items: center;
+}
+
+button {
+  width: 55px;
+  height: 55px;
+  font-size: 30px;
+  font-weight: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(116, 235, 213, 1);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: rgba(116, 235, 213, 1);
+  box-shadow: 0 8px 20px rgba(116, 235, 213, 1);
+}
+
+.num {
+  background-color: rgba(248, 248, 248, 1);
+  color: black;
+}
+
+.num:hover {
+  background-color: rgba(248, 248, 248, 1);
+}

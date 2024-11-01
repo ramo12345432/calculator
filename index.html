@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <svg
+      class="vector"
+      width="557"
+      height="683"
+      viewBox="0 0 557 683"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="conicGradient" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="rgba(172, 182, 229, 0.6)" />
+          <stop offset="43.8%" stop-color="#74EBD5" />
+          <stop offset="100%" stop-color="rgba(172, 182, 229, 0.6)" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M162.047 402.633C219.047 608.133 54.4734 551.362 6.047 620.633C-42.3794 689.904 255.385 699.001 306.547 660.133C370.499 611.549 278.262 379.99 463.262 324.99C648.262 269.99 543.738 -116.148 278.729 35.817C13.7204 187.782 105.047 197.133 162.047 402.633Z"
+        fill="url(#conicGradient)"
+      />
+    </svg>
+
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <div id="result"></div>
+      <div id="equalSign"></div>
+      <div class="line"></div>
+      <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="applyPercentage()">%</button>
+        <button onclick="appendToDisplay('*')">x</button>
+        <button class="num" onclick="appendToDisplay('7')">7</button>
+        <button class="num" onclick="appendToDisplay('8')">8</button>
+        <button class="num" onclick="appendToDisplay('9')">9</button>
+        <button onclick="toggleSign()">±</button>
+        <button class="num" onclick="appendToDisplay('4')">4</button>
+        <button class="num" onclick="appendToDisplay('5')">5</button>
+        <button class="num" onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button class="num" onclick="appendToDisplay('1')">1</button>
+        <button class="num" onclick="appendToDisplay('2')">2</button>
+        <button class="num" onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button class="num" onclick="appendToDisplay('.')">.</button>
+        <button class="num" onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('←')">←</button>
+        <button onclick="calculate()">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
